@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_apprentice_fooderlich/screens/card1.dart';
 import 'package:flutter_apprentice_fooderlich/screens/card2.dart';
+import 'package:flutter_apprentice_fooderlich/screens/card3.dart';
 import 'package:flutter_apprentice_fooderlich/shared/app_theme.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   static List<Widget> pages = <Widget>[
     const Card1(),
     const Card2(),
-    Container(color: Colors.green),
+    const Card3(),
   ];
 
   void _onTapItem(int index) {

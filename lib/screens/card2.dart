@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_apprentice_fooderlich/shared/app_theme.dart';
 import 'package:flutter_apprentice_fooderlich/widgets/author_card.dart';
 
 class Card2 extends StatelessWidget {
@@ -26,10 +27,35 @@ class Card2 extends StatelessWidget {
         child: Column(
           children: [
             AuthorCard(
-              authorName: 'Afolabi Oluwasegun',
+              authorName: 'Afolabi Lekkss',
               title: 'KOG',
               imageProvider: AssetImage('assets/images/lekkss1.png'),
             ),
+            Expanded(
+              child: Stack(
+                children: [
+                  Positioned(
+                    bottom: 16,
+                    right: 16,
+                    child: Text(
+                      'Recipe',
+                      style: FooderlichTheme.lightTextTheme.headline1,
+                    ),
+                  ),
+                  Positioned(
+                    bottom: 70,
+                    left: 16,
+                    child: RotatedBox(
+                      quarterTurns: 3,
+                      child: Text(
+                        'Smoothies',
+                        style: FooderlichTheme.lightTextTheme.headline1,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
